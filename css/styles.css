@@ -120,6 +120,8 @@ h6 {
 /* Contacts */
 
 .contacts .link {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -147,6 +149,22 @@ h6 {
     margin-right: 50px;
 }
 
+.contacts .icon {
+    margin-right: 10px;
+}
+
+.mail,
+.tel {
+    vertical-align: middle;
+}
+
+.contacts .link:hover .icon,
+.contacts .link:hover .icon {
+    stroke: #000000;
+}
+
+
+
 /* Studio page */
 /* Hero */
 
@@ -162,6 +180,7 @@ h6 {
     background-color: #C4C4C4;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('../images/hero.jpg');
+    background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -233,6 +252,16 @@ h6 {
     margin-right: 30px;
 }
 
+.features-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+}
+
 .features-title {
     margin-bottom: 11px;
 
@@ -286,7 +315,7 @@ h6 {
 
 .persons-card {
     padding-top: 33px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
 }
 
 .persons-name {
@@ -300,6 +329,7 @@ h6 {
 }
 
 .persons-text {
+    margin-bottom: 16px;
     text-align: center;
 
     color: var(--other-text-color);
@@ -308,13 +338,58 @@ h6 {
     letter-spacing: 0.03em;
 }
 
+.persons-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.persons-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.persons-flex:not(:last-child) {
+    margin-right: 10px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.persons-link:hover {
+    background-color: var(--accent-color);
+}
+
+.persons-link:hover .icon {
+    fill: #ffffff;
+    stroke: #ffffff;
+}
+
+
+
 /* Footer */
 
 .page-footer.section {
     padding-top: 60px;
     padding-bottom: 60px;
+    height: 252px;
     background-color: var(--background-footer);
 }
+
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+
 
 .bottom.logo {
     padding: 0px;
@@ -325,6 +400,7 @@ h6 {
 }
 
 .address-list {
+    margin-right: 70px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -353,6 +429,46 @@ h6 {
 .link:focus,
 .link:active {
     color: var(--accent-color);
+}
+
+.footer-heading {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+}
+
+.footer-links.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-item {
+    background-color: #43444D;
+    border-radius: 50%;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.link-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.link-item:hover {
+    background-color: var(--accent-color);
 }
 
 /* Portfolio Page */
