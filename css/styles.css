@@ -174,7 +174,7 @@ h6 {
     letter-spacing: 0.06em;
     text-align: center;
 
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     margin: 0 auto;
     background-color: #C4C4C4;
@@ -190,6 +190,7 @@ h6 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
@@ -284,6 +285,19 @@ h6 {
 
 .persons-item {
     background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.persons-item:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2),
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .persons-item:not(:last-child) {
@@ -372,6 +386,61 @@ h6 {
     stroke: #ffffff;
 }
 
+.clients.section {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.clients-heading {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+.clients.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.clients-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    padding: 16px 32px;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.clients-link {
+    fill: #AFB1B8;
+}
+
+.clients-link:hover {
+    fill: var(--accent-color);
+    border-color: var(--accent-color)
+}
+
+.clients-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 60px;
+}
 
 
 /* Footer */
@@ -487,6 +556,13 @@ h6 {
     margin-bottom: 50px
 }
 
+.filter .item:hover,
+.filter .item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .filter button:hover,
 .filter button:focus {
     background-color: #2196f3;
@@ -532,6 +608,12 @@ img {
     margin-left: 30px;
     margin-top: 30px;
 
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
