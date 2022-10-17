@@ -366,7 +366,6 @@ h6 {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-
 }
 
 .persons-flex:not(:last-child) {
@@ -388,7 +387,6 @@ h6 {
 .persons-link:hover .icon,
 .persons-link:focus .icon {
     fill: #ffffff;
-
 }
 
 .clients.section {
@@ -407,8 +405,8 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 }
-
 
 
 .clients-item {
@@ -417,9 +415,6 @@ h6 {
     align-items: center;
 }
 
-.clients-item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .clients-link {
     padding: 16px 32px;
@@ -431,7 +426,7 @@ h6 {
 }
 
 .clients-link {
-    fill: #AFB1B8;
+    color: #AFB1B8;
 }
 
 .clients-link:hover .clients-icon,
@@ -450,6 +445,7 @@ h6 {
     align-items: center;
     width: 106px;
     height: 60px;
+    fill: currentColor;
 }
 
 
@@ -522,6 +518,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .link-item {
@@ -535,6 +532,7 @@ h6 {
     align-items: center;
     width: 44px;
     height: 44px;
+
 }
 
 .footer-icon {
@@ -542,12 +540,10 @@ h6 {
     height: 20px;
 }
 
-.link-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.link-item:hover {
+.footer-link:hover,
+.footer-link:focus {
     background-color: var(--accent-color);
+    border-radius: 50%;
 }
 
 /* Portfolio Page */
