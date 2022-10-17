@@ -159,8 +159,8 @@ h6 {
 }
 
 .contacts .link:hover .icon,
-.contacts .link:hover .icon {
-    stroke: #000000;
+.contacts .link:focus .icon {
+    fill: currentColor;
 }
 
 
@@ -356,6 +356,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .persons-link {
@@ -365,6 +366,7 @@ h6 {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
 }
 
 .persons-flex:not(:last-child) {
@@ -375,15 +377,18 @@ h6 {
     width: 20px;
     height: 20px;
     fill: #AFB1B8;
+    font-style: none;
 }
 
-.persons-link:hover {
+.persons-link:hover,
+.persons-link:focus {
     background-color: var(--accent-color);
 }
 
-.persons-link:hover .icon {
+.persons-link:hover .icon,
+.persons-link:focus .icon {
     fill: #ffffff;
-    stroke: #ffffff;
+
 }
 
 .clients.section {
@@ -429,9 +434,14 @@ h6 {
     fill: #AFB1B8;
 }
 
-.clients-link:hover {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
     fill: var(--accent-color);
-    border-color: var(--accent-color)
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-color);
 }
 
 .clients-icon {
