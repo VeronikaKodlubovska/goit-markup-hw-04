@@ -20,6 +20,7 @@
     --contacts-text-color-in-footer: rgba(255, 255, 255, 0.6);
     --border-bottom-color: #ececec;
     --main-button-active: #188CE8;
+    --persons-icons: #AFB1B8;
 }
 
 /* Studio Page */
@@ -366,6 +367,7 @@ h6 {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    color: var(--persons-icons);
 }
 
 .persons-flex:not(:last-child) {
@@ -375,7 +377,7 @@ h6 {
 .icon {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: currentColor;
     font-style: none;
 }
 
