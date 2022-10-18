@@ -409,23 +409,16 @@ h6 {
 }
 
 
-.clients-item {
+.clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.clients-link {
     padding: 16px 32px;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     background-color: #FFFFFF;
-}
-
-.clients-link {
     color: #AFB1B8;
 }
 
@@ -440,9 +433,6 @@ h6 {
 }
 
 .clients-link svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     fill: currentColor;
 }
 
