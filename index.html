@@ -51,7 +51,7 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
-                <button type="button" class="main-button">Замовити послугу</button>
+                <button data-modal-open type="button" class="main-button">Замовити послугу</button>
             </div>
         </section>
         <!--Особливості-->
@@ -107,9 +107,21 @@
             <div class="container">
                 <h2 class="work-title">Чим ми займаємося</h2>
                 <ul class="work list">
-                    <li class="item"><img src="./images/img1.jpg" alt="Веб-програмування" width="370"></li>
-                    <li class="item"><img src="./images/box2.jpg" alt="Адаптивна верстка" width="370"></li>
-                    <li class="item"><img src="images/box3.jpg" alt="Веб-дизайн" width="370"></li>
+                    <li class="work-item"><img src="./images/img1.jpg" alt="Веб-програмування" width="370">
+                        <div class="work-name">
+                            <h3 class="work-name-item">Десктопні додатки</h3>
+                        </div>
+                    </li>
+                    <li class="work-item"><img src="./images/box2.jpg" alt="Адаптивна верстка" width="370">
+                        <div class="work-name">
+                            <h3 class="work-name-item">Мобільні додатки</h3>
+                        </div>
+                    </li>
+                    <li class="work-item"><img src="images/box3.jpg" alt="Веб-дизайн" width="370">
+                        <div class="work-name">
+                            <h3 class="work-name-item">Дизайнерські рішення</h3>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -276,6 +288,14 @@
         </div>
 
     </footer>
+    <!-- Modal -->
+    <div data-modal class="backdrop is-hidden">
+        <div class="modal">
+            <a class="btn-close" href=""> </a>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
